@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sidebar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a href="#" class="btn btn-dark mb-4" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+
+                <div class="btn-group dropright">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-home icon-5x sidebarIcon"></i>
+
+                    </button>
+                    <div class="dropdown-menu">
+                        <li>
+                            <a href="#">Right1</a>
+                        </li>
+                        <li>
+                            <a href="#">Right2
+                            </a>
+                        </li>
+                    </div>
+                </div>
+
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fa fa-home icon-5x sidebarIcon"></i>
+
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li class="narrowSideNavSubItem">
+                            <a href="#">Workflow Network</a>
+                        </li>
+                        <li>
+                            <a href="#">page2</a>
+                        </li>
+                        <li>
+                            <a href="#">page3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-home icon-5x sidebarIcon"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Sidebar Layouts are Cool</h1>
+                        <p>I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love
+                            apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple
+                            pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie.
+                            I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love
+                            apple pie. I love apple pie. I love apple pie. I love apple pie. </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Menu toggle script -->
+    <script>
+        $("#menu-toggle").click((e) => {
+            e.preventDefault();
+            $("#wrapper").toggleClass("menuDisplayed");
+        });
+    </script>
+
+</body>
+
+</html>

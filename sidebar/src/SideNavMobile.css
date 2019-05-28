@@ -1,0 +1,19 @@
+.mobileNav{margin-top: 45px; margin-left: -20px;}
+.navbarMobileRow{
+    background-color: #169f7b;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.SideNavMobileDrawer{
+    position: 'fixed';
+    background-color: #169f7b;
+    top: '54px';
+    left: 'auto';
+    right: '0';
+    bottom: '0';
+    overflow-y: 'auto';
+    width: 100%;
+    transition: 'opacity 150ms, transform 150ms';
+}
